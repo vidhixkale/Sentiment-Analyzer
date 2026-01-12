@@ -1,0 +1,170 @@
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            padding: 2rem 0;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1.5rem;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102,126,234,0.4);
+        }
+        
+        .btn-secondary {
+            border-radius: 25px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+        
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102,126,234,0.25);
+        }
+        
+        .sentiment-positive {
+            background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
+            color: white;
+        }
+        
+        .sentiment-negative {
+            background: linear-gradient(135deg, #FF6B6B 0%, #EE5A52 100%);
+            color: white;
+        }
+        
+        .sentiment-neutral {
+            background: linear-gradient(135deg, #A8E6CF 0%, #88D8A3 100%);
+            color: white;
+        }
+        
+        .sentiment-badge {
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .confidence-bar {
+            height: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #e9ecef;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s ease;
+        }
+        
+        .result-animation {
+            animation: slideInUp 0.5s ease-out;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 1rem 0;
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 0.5rem;
+        }
+        
+        .stats-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .file-upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .file-upload-area:hover {
+            background: rgba(102,126,234,0.1);
+            border-color: #764ba2;
+        }
+        
+        .file-upload-area.dragover {
+            background: rgba(102,126,234,0.2);
+            border-color: #764ba2;
+        }
