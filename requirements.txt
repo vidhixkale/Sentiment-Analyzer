@@ -1,0 +1,11 @@
+nltk==3.8.1
+textblob==0.17.1
+tweepy==4.14.0
+praw==7.7.0
+plotly==5.15.0
+dash==2.11.1
+wordcloud==1.9.2
+pandas
+numpy
+scikit-learn
+python-dotenv
